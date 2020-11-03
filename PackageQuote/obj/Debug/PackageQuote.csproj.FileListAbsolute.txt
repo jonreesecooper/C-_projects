@@ -1,0 +1,7 @@
+C:\Users\jonre\Desktop\Basic_C#_Programs\PackageQuote\bin\Debug\PackageQuote.exe.config
+C:\Users\jonre\Desktop\Basic_C#_Programs\PackageQuote\bin\Debug\PackageQuote.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\PackageQuote\bin\Debug\PackageQuote.pdb
+C:\Users\jonre\Desktop\Basic_C#_Programs\PackageQuote\obj\Debug\PackageQuote.csprojAssemblyReference.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\PackageQuote\obj\Debug\PackageQuote.csproj.CoreCompileInputs.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\PackageQuote\obj\Debug\PackageQuote.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\PackageQuote\obj\Debug\PackageQuote.pdb
