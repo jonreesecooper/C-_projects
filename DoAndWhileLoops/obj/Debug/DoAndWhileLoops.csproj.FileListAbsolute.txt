@@ -1,0 +1,7 @@
+C:\Users\jonre\Desktop\Basic_C#_Programs\DoAndWhileLoops\obj\Debug\DoAndWhileLoops.csprojAssemblyReference.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\DoAndWhileLoops\obj\Debug\DoAndWhileLoops.csproj.CoreCompileInputs.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\DoAndWhileLoops\bin\Debug\DoAndWhileLoops.exe.config
+C:\Users\jonre\Desktop\Basic_C#_Programs\DoAndWhileLoops\bin\Debug\DoAndWhileLoops.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\DoAndWhileLoops\bin\Debug\DoAndWhileLoops.pdb
+C:\Users\jonre\Desktop\Basic_C#_Programs\DoAndWhileLoops\obj\Debug\DoAndWhileLoops.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\DoAndWhileLoops\obj\Debug\DoAndWhileLoops.pdb
