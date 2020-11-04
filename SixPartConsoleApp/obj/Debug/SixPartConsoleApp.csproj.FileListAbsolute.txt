@@ -1,0 +1,7 @@
+C:\Users\jonre\Desktop\Basic_C#_Programs\SixPartConsoleApp\bin\Debug\SixPartConsoleApp.exe.config
+C:\Users\jonre\Desktop\Basic_C#_Programs\SixPartConsoleApp\bin\Debug\SixPartConsoleApp.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\SixPartConsoleApp\bin\Debug\SixPartConsoleApp.pdb
+C:\Users\jonre\Desktop\Basic_C#_Programs\SixPartConsoleApp\obj\Debug\SixPartConsoleApp.csprojAssemblyReference.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\SixPartConsoleApp\obj\Debug\SixPartConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\SixPartConsoleApp\obj\Debug\SixPartConsoleApp.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\SixPartConsoleApp\obj\Debug\SixPartConsoleApp.pdb
