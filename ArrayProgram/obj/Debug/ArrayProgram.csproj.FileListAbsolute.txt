@@ -1,0 +1,7 @@
+C:\Users\jonre\Desktop\Basic_C#_Programs\ArrayProgram\bin\Debug\ArrayProgram.exe.config
+C:\Users\jonre\Desktop\Basic_C#_Programs\ArrayProgram\bin\Debug\ArrayProgram.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\ArrayProgram\bin\Debug\ArrayProgram.pdb
+C:\Users\jonre\Desktop\Basic_C#_Programs\ArrayProgram\obj\Debug\ArrayProgram.csprojAssemblyReference.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\ArrayProgram\obj\Debug\ArrayProgram.csproj.CoreCompileInputs.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\ArrayProgram\obj\Debug\ArrayProgram.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\ArrayProgram\obj\Debug\ArrayProgram.pdb
