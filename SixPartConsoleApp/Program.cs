@@ -75,15 +75,32 @@ namespace SixPartConsoleApp
             {
                 if (videoGames[i] == gameSearch)
                 {
-                    Console.WriteLine("A match was found at index: " + videoGames.IndexOf(videoGames[i]));
+                    Console.WriteLine("A match was found at index: " + i);
+                }
+            }
+            if (videoGames.Contains(gameSearch) == false)
+            {
+                Console.WriteLine("No matches for that search.");
+            }
+
+            List<string> switchGames = new List<string>() { "Super Mario Maker 2", "The Legend of Zelda: Link\'s Awakening", "Mario Kart 8 Deluxe", "Super Mario Maker 2" };
+            List<string> switchGames1 = new List<string>();
+            foreach (string game in switchGames)
+            {
+                if (switchGames1.Contains(game))
+                {
+                    switchGames1.Add(game + "- already exists in list");
                 }
                 else
                 {
-                    Console.WriteLine("Oops, no entries found!");
+                    switchGames1.Add(game);
                 }
             }
-
+            foreach (string game in switchGames1)
+            {
+                Console.WriteLine(game);
+            }
             Console.ReadLine();
-        }
+        }   
     }
 }
