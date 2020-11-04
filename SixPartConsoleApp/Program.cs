@@ -73,21 +73,14 @@ namespace SixPartConsoleApp
             string gameSearch = Console.ReadLine();
             for (int i = 0; i < videoGames.Count; i++)
             {
-                bool thirdBool = false;
-                while(!thirdBool)
+                if (videoGames[i] == gameSearch)
                 {
-                    if (videoGames[i] == gameSearch)
-                    {
-                        Console.WriteLine("A match was found at index: " + videoGames.IndexOf(videoGames[i]));
-                        thirdBool = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Oops, no entries found!");
-                        thirdBool = true;
-                    }
+                    Console.WriteLine("A match was found at index: " + videoGames.IndexOf(videoGames[i]));
                 }
-
+                else
+                {
+                    Console.WriteLine("Oops, no entries found!");
+                }
             }
 
             Console.ReadLine();
