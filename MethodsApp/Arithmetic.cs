@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace MethodsApp
 {
-    class Arithmetic
+    public class Arithmetic
     {
+        public int AddingTo(int userInput)
+        {
+            return userInput + 50;
+        }
     }
 }
