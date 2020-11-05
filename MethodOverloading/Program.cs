@@ -16,7 +16,7 @@ namespace MethodOverloading
             int decArithmetic = arithmetic.AddingTo(20.0m);
             Console.WriteLine(decArithmetic);
             string strArithmetic = arithmetic.AddingTo("55");
-            Console.WriteLine(strArithmetic);
+            Console.WriteLine(Convert.ToInt32(strArithmetic));
             Console.ReadLine();
         }
     }
