@@ -20,8 +20,8 @@ namespace MethodOverloading
 
         public string AddingTo(string x)
         {
-            Convert.ToInt32(x);
-            return x + 75;
+            int newX = Convert.ToInt32(x);
+            return newX + 75;
         }
     }
 }
