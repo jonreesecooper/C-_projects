@@ -12,11 +12,11 @@ namespace MethodOverloading
         {
             Arithmetic arithmetic = new Arithmetic();
             int intArithmetic = arithmetic.AddingTo(15);
-            Console.WriteLine(intArithmetic);
+            Console.WriteLine("15 + 25 = {0}", intArithmetic);
             int decArithmetic = arithmetic.AddingTo(20.0m);
-            Console.WriteLine(decArithmetic);
-            string strArithmetic = arithmetic.AddingTo("55");
-            Console.WriteLine(Convert.ToInt32(strArithmetic));
+            Console.WriteLine("20 + 50 = {0}", decArithmetic);
+            int strArithmetic = arithmetic.AddingTo("55");
+            Console.WriteLine("55 + 75 = {0}", strArithmetic);
             Console.ReadLine();
         }
     }
