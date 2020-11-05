@@ -8,9 +8,20 @@ namespace MethodsApp
 {
     public class Arithmetic
     {
-        public int AddingTo(int userInput)
+        public int AddingTo(int userInput1, int userInput2)
         {
-            return userInput + 50;
+            return userInput1 + userInput2;
+        }
+
+        public int SubtractingFrom(int userInput1, int userInput2)
+        {
+            return userInput1 - userInput2;
+        }
+
+        public int MultiplyBy(int userInput1, int userInput2)
+        {
+            return userInput1 * userInput2;
         }
     }
+
 }

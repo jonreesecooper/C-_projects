@@ -11,9 +11,16 @@ namespace MethodsApp
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter a whole number.");
-            int userInput = Convert.ToInt32(Console.ReadLine());
-            int firstAnswer = AddingTo(userInput);
-            Console.WriteLine(firstAnswer);
+            int userInput1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter another whole number.");
+            int userInput2 = Convert.ToInt32(Console.ReadLine());
+            Arithmetic result = new Arithmetic();
+            int firstAnswer = result.AddingTo(userInput1, userInput2);
+            Console.WriteLine(userInput1 + " + " + userInput2 + " = " + firstAnswer);
+            int secondAnswer = result.SubtractingFrom(userInput1, userInput2);
+            Console.WriteLine(userInput1 + " - " + userInput2 + " = " + secondAnswer);
+            int thirdAnswer = result.MultiplyBy(userInput1, userInput2);
+            Console.WriteLine(userInput1 + " * " + userInput2 + " = " + thirdAnswer);
             Console.ReadLine();
         }
     }
