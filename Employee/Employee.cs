@@ -12,16 +12,13 @@ namespace Employee
     {
         Console.WriteLine("I quit!");
     }
-        public static Person operator ==(Person person, Person person1)
+        public static bool operator==(Employee person, Person person1)
         {
-            if (person.Id == person1.Id)
-            {
-                Console.WriteLine("It's a match!");
-            }
-            if (person.Id != person1.Id)
-            {
-                Console.WriteLine("It is not a match.");
-            }
+            return (person.Id == person1.Id);
+        }
+        public static bool operator!=(Employee person, Person person1)
+        {
+            return (person.Id != person.Id);
         }
     }
 }
