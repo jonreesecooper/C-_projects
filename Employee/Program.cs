@@ -10,10 +10,12 @@ namespace Employee
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee() { FirstName = "Sample", LastName = "Student" };
+            Employee employee = new Employee() { FirstName = "Sample", LastName = "Student", Id = 1 };
+            Employee employee1 = new Employee() { FirstName = "Jon", LastName = "Cooper", Id = 2 };
             IQuittable iquittable = new Employee();
             employee.SayName();
             iquittable.Quit();
+            employee == employee1;
             Console.ReadLine();
         }
     }
