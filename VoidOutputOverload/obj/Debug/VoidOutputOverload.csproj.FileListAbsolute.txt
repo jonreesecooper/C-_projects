@@ -1,0 +1,7 @@
+C:\Users\jonre\source\repos\VoidOutputOverload\bin\Debug\VoidOutputOverload.exe.config
+C:\Users\jonre\source\repos\VoidOutputOverload\bin\Debug\VoidOutputOverload.exe
+C:\Users\jonre\source\repos\VoidOutputOverload\bin\Debug\VoidOutputOverload.pdb
+C:\Users\jonre\source\repos\VoidOutputOverload\obj\Debug\VoidOutputOverload.csprojAssemblyReference.cache
+C:\Users\jonre\source\repos\VoidOutputOverload\obj\Debug\VoidOutputOverload.csproj.CoreCompileInputs.cache
+C:\Users\jonre\source\repos\VoidOutputOverload\obj\Debug\VoidOutputOverload.exe
+C:\Users\jonre\source\repos\VoidOutputOverload\obj\Debug\VoidOutputOverload.pdb
