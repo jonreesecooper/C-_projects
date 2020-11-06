@@ -1,0 +1,7 @@
+C:\Users\jonre\Desktop\Basic_C#_Programs\Students\bin\Debug\Students.exe.config
+C:\Users\jonre\Desktop\Basic_C#_Programs\Students\bin\Debug\Students.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\Students\bin\Debug\Students.pdb
+C:\Users\jonre\Desktop\Basic_C#_Programs\Students\obj\Debug\Students.csprojAssemblyReference.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\Students\obj\Debug\Students.csproj.CoreCompileInputs.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\Students\obj\Debug\Students.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\Students\obj\Debug\Students.pdb
