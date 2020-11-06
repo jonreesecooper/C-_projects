@@ -11,7 +11,9 @@ namespace Employee
         static void Main(string[] args)
         {
             Employee employee = new Employee() { FirstName = "Sample", LastName = "Student" };
+            IQuittable iquittable = new Employee();
             employee.SayName();
+            iquittable.Quit();
             Console.ReadLine();
         }
     }
