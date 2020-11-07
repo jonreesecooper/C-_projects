@@ -1,0 +1,7 @@
+C:\Users\jonre\Desktop\Basic_C#_Programs\DataType\bin\Debug\DataType.exe.config
+C:\Users\jonre\Desktop\Basic_C#_Programs\DataType\bin\Debug\DataType.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\DataType\bin\Debug\DataType.pdb
+C:\Users\jonre\Desktop\Basic_C#_Programs\DataType\obj\Debug\DataType.csprojAssemblyReference.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\DataType\obj\Debug\DataType.csproj.CoreCompileInputs.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\DataType\obj\Debug\DataType.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\DataType\obj\Debug\DataType.pdb
