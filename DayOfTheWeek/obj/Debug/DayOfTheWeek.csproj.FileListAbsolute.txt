@@ -1,0 +1,7 @@
+C:\Users\jonre\Desktop\Basic_C#_Programs\DayOfTheWeek\bin\Debug\DayOfTheWeek.exe.config
+C:\Users\jonre\Desktop\Basic_C#_Programs\DayOfTheWeek\bin\Debug\DayOfTheWeek.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\DayOfTheWeek\bin\Debug\DayOfTheWeek.pdb
+C:\Users\jonre\Desktop\Basic_C#_Programs\DayOfTheWeek\obj\Debug\DayOfTheWeek.csprojAssemblyReference.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\DayOfTheWeek\obj\Debug\DayOfTheWeek.csproj.CoreCompileInputs.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\DayOfTheWeek\obj\Debug\DayOfTheWeek.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\DayOfTheWeek\obj\Debug\DayOfTheWeek.pdb
