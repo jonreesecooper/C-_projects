@@ -12,6 +12,7 @@ namespace EmployeeList
         {
             List<Employee> employees = new List<Employee>();
             List<Employee> thejoes = new List<Employee>();
+            List<Employee> fiveplus = new List<Employee>();
             employees.Add(new Employee() { Id = 1, FirstName = "Joe", LastName = "Momma" });
             employees.Add(new Employee() { Id = 2, FirstName = "Jim", LastName = "Jimson" });
             employees.Add(new Employee() { Id = 3, FirstName = "Dan", LastName = "Danson" });
@@ -34,6 +35,11 @@ namespace EmployeeList
             foreach(Employee employee in thejoes)
             {
                 Console.WriteLine(employee.FirstName + " " + employee.LastName);
+            }
+            fiveplus = employees.Where(x => x.Id > 5).ToList();
+            foreach(Employee employee in fiveplus)
+            {
+                Console.WriteLine(employee.FirstName + " " + employee.LastName + " has an Id greater than 5.");
             }
             Console.ReadLine();
         }
