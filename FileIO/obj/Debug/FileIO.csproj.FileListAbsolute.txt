@@ -1,0 +1,7 @@
+C:\Users\jonre\Desktop\Basic_C#_Programs\FileIO\bin\Debug\FileIO.exe.config
+C:\Users\jonre\Desktop\Basic_C#_Programs\FileIO\bin\Debug\FileIO.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\FileIO\bin\Debug\FileIO.pdb
+C:\Users\jonre\Desktop\Basic_C#_Programs\FileIO\obj\Debug\FileIO.csprojAssemblyReference.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\FileIO\obj\Debug\FileIO.csproj.CoreCompileInputs.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\FileIO\obj\Debug\FileIO.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\FileIO\obj\Debug\FileIO.pdb
