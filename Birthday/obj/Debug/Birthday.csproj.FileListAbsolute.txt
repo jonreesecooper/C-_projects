@@ -1,0 +1,7 @@
+C:\Users\jonre\Desktop\Basic_C#_Programs\Birthday\bin\Debug\Birthday.exe.config
+C:\Users\jonre\Desktop\Basic_C#_Programs\Birthday\bin\Debug\Birthday.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\Birthday\bin\Debug\Birthday.pdb
+C:\Users\jonre\Desktop\Basic_C#_Programs\Birthday\obj\Debug\Birthday.csprojAssemblyReference.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\Birthday\obj\Debug\Birthday.csproj.CoreCompileInputs.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\Birthday\obj\Debug\Birthday.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\Birthday\obj\Debug\Birthday.pdb
