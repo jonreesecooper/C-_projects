@@ -1,0 +1,7 @@
+C:\Users\jonre\Desktop\Basic_C#_Programs\TodaysDate\bin\Debug\TodaysDate.exe.config
+C:\Users\jonre\Desktop\Basic_C#_Programs\TodaysDate\bin\Debug\TodaysDate.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\TodaysDate\bin\Debug\TodaysDate.pdb
+C:\Users\jonre\Desktop\Basic_C#_Programs\TodaysDate\obj\Debug\TodaysDate.csprojAssemblyReference.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\TodaysDate\obj\Debug\TodaysDate.csproj.CoreCompileInputs.cache
+C:\Users\jonre\Desktop\Basic_C#_Programs\TodaysDate\obj\Debug\TodaysDate.exe
+C:\Users\jonre\Desktop\Basic_C#_Programs\TodaysDate\obj\Debug\TodaysDate.pdb
