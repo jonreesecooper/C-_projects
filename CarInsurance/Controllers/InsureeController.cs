@@ -175,20 +175,22 @@ namespace CarInsurance.Controllers
 
         public ActionResult Admin(int? id)
         {
-            Table table = db.Tables.Find(id);
-            var tables = new List<Table>();
-            var tableVms = new List<TableVm>();
-            foreach (var x in tables)
+            using (InsuranceEntities db = new InsuranceEntities())
             {
-                var tableVm = new TableVm();
-                x.FirstName = tableVm.FirstName;
-                x.LastName = tableVm.LastName;
-                x.EmailAddress = tableVm.EmailAddress;
-                x.Quote = tableVm.Quote;
+                var tables = db.Tables.Where(x => x.Id != null).ToList();
+                var tableVms = new List<TableVm>();
+                foreach (var x in tables)
+                {
+                    var tableVm = new TableVm();
+                    tableVm.FirstName = x.FirstName;
+                    tableVm.LastName = x.LastName;
+                    tableVm.EmailAddress = x.EmailAddress;
+                    tableVm.Quote = x.Quote;
 
-                tableVms.Add(tableVm);
+                    tableVms.Add(tableVm);
+                }
+                return View(tableVms);
             }
-            return View(tableVms);
         }
     }
 }

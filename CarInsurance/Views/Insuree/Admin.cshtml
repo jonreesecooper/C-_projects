@@ -1,33 +1,30 @@
 ﻿@using CarInsurance.ViewModels
 @model List<TableVm>
+<h3 style="text-align:center;">QUOTES</h3> 
+<table class="table">
+  <tr>
+    <td><strong>First Name</strong></td>
+    <td><strong>Last Name</strong></td>
+    <td><strong>Email Address</strong></td>
+    <td><strong>Quote</strong></td>
+  </tr>
+  @foreach (var item in Model)
+  {
+    <tr>
+      <td>
+        @Html.DisplayFor(modelItem => item.FirstName)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.LastName)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.EmailAddress)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Quote)
+      </td>
+    </tr>
+  }
 
-<div class="row no-gutters m-3">
-  <div class="card col-sm col-md-10 col-lg-6 mx-auto shadow">
-    <div class="card-header text-center">
-      <h5 class="m-0">Quotes</h5>
-    </div>
-    <div class="card-body">
-      @foreach (var quote in Model)
-      {
-        using (Html.BeginForm("Quotes", "Admin", FormMethod.Post))
-        {
-          <div class="row mb-2">
-            <div class="col-2">
-              @quote.FirstName
-            </div>
-            <div class="col">
-              @quote.LastName
-            </div>
-            <div class="col-5">
-              @quote.EmailAddress
-            </div>
-            <div class="col-5">
-              @quote.Quote
-            </div>
-          </div>
-        }
-      }
-    </div>
-  </div>
-</div>
+</table>
 
