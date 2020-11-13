@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CarInsurance.Models;
+using CarInsurance.ViewModels;
 
 namespace CarInsurance.Controllers
 {
@@ -51,6 +52,53 @@ namespace CarInsurance.Controllers
 
             if (ModelState.IsValid)
             {
+                DateTime now = DateTime.Now;
+                int current = now.Year;
+                int dob = table.DateOfBirth.Year;
+                int age = current - dob;
+                var make = table.CarMake.ToLower();
+                var model = table.CarModel.ToLower();
+                table.Quote = 50;
+                if (age < 18)
+                {
+                    table.Quote += 100;
+                }
+                else if (age >= 18 && age < 26)
+                {
+                    table.Quote += 50;
+                }
+                else
+                {
+                    table.Quote += 25;
+                }
+                if (table.CarYear < 2000)
+                {
+                    table.Quote += 25;
+                }
+                if (table.CarYear > 2015)
+                {
+                    table.Quote += 25;
+                }
+                if (make == "porsche")
+                {
+                    table.Quote += 25;
+                }
+                if (make == "porsche" && model == "911 carrera")
+                {
+                    table.Quote += 25;
+                }
+                if (table.SpeedingTickets > 0)
+                {
+                    table.Quote += table.SpeedingTickets * 10;
+                }
+                if (table.DUI)
+                {
+                    table.Quote += table.Quote * .25m;
+                }
+                if (table.CoverageType)
+                {
+                    table.Quote += table.Quote * .5m;
+                }
                 db.Tables.Add(table);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -125,56 +173,22 @@ namespace CarInsurance.Controllers
             base.Dispose(disposing);
         }
 
-        public static decimal GetQuote(DateTime dateOfBirth, int carYear, string carMake, string carModel, int speedingTickets, bool dui, bool coverageType)
+        public ActionResult Admin(int? id)
         {
-            DateTime now = DateTime.Now;
-            int current = now.Year;
-            int dob = dateOfBirth.Year;
-            int age = current - dob;
-            decimal quote = 50.00m;
-            var make = carMake.ToLower();
-            var model = carModel.ToLower();
-            if (age < 18)
+            Table table = db.Tables.Find(id);
+            var tables = new List<Table>();
+            var tableVms = new List<TableVm>();
+            foreach (var x in tables)
             {
-                quote += 100.00m;
+                var tableVm = new TableVm();
+                x.FirstName = tableVm.FirstName;
+                x.LastName = tableVm.LastName;
+                x.EmailAddress = tableVm.EmailAddress;
+                x.Quote = tableVm.Quote;
+
+                tableVms.Add(tableVm);
             }
-            if (age > 18 && age < 26)
-            {
-                quote += 50.00m;
-            }
-            if (age >= 26)
-            {
-                quote += 25.00m;
-            }
-            if (carYear < 2000)
-            {
-                quote += 25.00m;
-            }
-            if (carYear > 2015)
-            {
-                quote += 25.00m;
-            }
-            if (make == "porsche")
-            {
-                quote += 25.00m;
-            }
-            if (make == "porsche" && model == "911 carrera")
-            {
-                quote += 25.00m;
-            }
-            if (speedingTickets > 0)
-            {
-                quote += Convert.ToDecimal(speedingTickets * 10);
-            }
-            if (dui)
-            {
-                quote += quote * .25m;
-            }
-            if (coverageType)
-            {
-                quote += quote * .50m;
-            }
-            return quote;
+            return View(tableVms);
         }
     }
 }
