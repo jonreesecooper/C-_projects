@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0C309EE4-6C4E-4865-AF9C-45127BDA9B61}</ProjectGuid>
+    <ProjectGuid>{1EC47787-B4E2-4C8F-84C6-F5F976046804}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -19,7 +19,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44358</IISExpressSSLPort>
+    <IISExpressSSLPort>44338</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -133,33 +133,48 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="DAL\SchoolConfiguration.cs" />
     <Compile Include="DAL\SchoolContext.cs" />
-    <Compile Include="DAL\SchoolInceptorLogging.cs" />
     <Compile Include="DAL\SchoolInceptorTransientErrors.cs" />
     <Compile Include="DAL\SchoolInitializer.cs" />
+    <Compile Include="DAL\SchoolInterceptorLogging.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Logging\Ilogger.cs" />
+    <Compile Include="Controllers\InstructorController.cs" />
+    <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Logger.cs" />
-    <Compile Include="Migrations\202011172216030_InitialCreate.cs" />
-    <Compile Include="Migrations\202011172216030_InitialCreate.designer.cs">
-      <DependentUpon>202011172216030_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202011191829175_InitialCreate.cs" />
+    <Compile Include="Migrations\202011191829175_InitialCreate.designer.cs">
+      <DependentUpon>202011191829175_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011172223470_MaxLengthOnNames.cs" />
-    <Compile Include="Migrations\202011172223470_MaxLengthOnNames.designer.cs">
-      <DependentUpon>202011172223470_MaxLengthOnNames.cs</DependentUpon>
+    <Compile Include="Migrations\202011191843029_MaxLengthOnNames.cs" />
+    <Compile Include="Migrations\202011191843029_MaxLengthOnNames.designer.cs">
+      <DependentUpon>202011191843029_MaxLengthOnNames.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011172226143_ColumnFirstName.cs" />
-    <Compile Include="Migrations\202011172226143_ColumnFirstName.designer.cs">
-      <DependentUpon>202011172226143_ColumnFirstName.cs</DependentUpon>
+    <Compile Include="Migrations\202011191852044_ColumnFirstName.cs" />
+    <Compile Include="Migrations\202011191852044_ColumnFirstName.designer.cs">
+      <DependentUpon>202011191852044_ColumnFirstName.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011172236500_ComplexDataModel.cs" />
-    <Compile Include="Migrations\202011172236500_ComplexDataModel.designer.cs">
-      <DependentUpon>202011172236500_ComplexDataModel.cs</DependentUpon>
+    <Compile Include="Migrations\202011191858394_ComplexDataModel.cs" />
+    <Compile Include="Migrations\202011191858394_ComplexDataModel.designer.cs">
+      <DependentUpon>202011191858394_ComplexDataModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011192107435_DepartmentSP.cs" />
+    <Compile Include="Migrations\202011192107435_DepartmentSP.designer.cs">
+      <DependentUpon>202011192107435_DepartmentSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011192110550_RowVersion.cs" />
+    <Compile Include="Migrations\202011192110550_RowVersion.designer.cs">
+      <DependentUpon>202011192110550_RowVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011192129355_Inheritance.cs" />
+    <Compile Include="Migrations\202011192129355_Inheritance.designer.cs">
+      <DependentUpon>202011192129355_Inheritance.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
@@ -167,9 +182,12 @@
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\OfficeAssignment.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AssignedCourseData.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroup.cs" />
+    <Compile Include="ViewModels\InstructorIndexData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -213,6 +231,21 @@
     <Content Include="Views\Student\Details.cshtml" />
     <Content Include="Views\Student\Edit.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Course\Create.cshtml" />
+    <Content Include="Views\Course\Delete.cshtml" />
+    <Content Include="Views\Course\Details.cshtml" />
+    <Content Include="Views\Course\Edit.cshtml" />
+    <Content Include="Views\Course\Index.cshtml" />
+    <Content Include="Views\Instructor\Create.cshtml" />
+    <Content Include="Views\Instructor\Delete.cshtml" />
+    <Content Include="Views\Instructor\Details.cshtml" />
+    <Content Include="Views\Instructor\Edit.cshtml" />
+    <Content Include="Views\Instructor\Index.cshtml" />
+    <Content Include="Views\Department\Create.cshtml" />
+    <Content Include="Views\Department\Delete.cshtml" />
+    <Content Include="Views\Department\Details.cshtml" />
+    <Content Include="Views\Department\Edit.cshtml" />
+    <Content Include="Views\Department\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -231,17 +264,26 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011172216030_InitialCreate.resx">
-      <DependentUpon>202011172216030_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011191829175_InitialCreate.resx">
+      <DependentUpon>202011191829175_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011172223470_MaxLengthOnNames.resx">
-      <DependentUpon>202011172223470_MaxLengthOnNames.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011191843029_MaxLengthOnNames.resx">
+      <DependentUpon>202011191843029_MaxLengthOnNames.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011172226143_ColumnFirstName.resx">
-      <DependentUpon>202011172226143_ColumnFirstName.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011191852044_ColumnFirstName.resx">
+      <DependentUpon>202011191852044_ColumnFirstName.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011172236500_ComplexDataModel.resx">
-      <DependentUpon>202011172236500_ComplexDataModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011191858394_ComplexDataModel.resx">
+      <DependentUpon>202011191858394_ComplexDataModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011192107435_DepartmentSP.resx">
+      <DependentUpon>202011192107435_DepartmentSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011192110550_RowVersion.resx">
+      <DependentUpon>202011192110550_RowVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011192129355_Inheritance.resx">
+      <DependentUpon>202011192129355_Inheritance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -260,9 +302,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>63920</DevelopmentServerPort>
+          <DevelopmentServerPort>62439</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44358/</IISUrl>
+          <IISUrl>https://localhost:44338/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

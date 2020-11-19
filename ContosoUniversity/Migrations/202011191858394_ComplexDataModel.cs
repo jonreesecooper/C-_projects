@@ -56,12 +56,11 @@
                 .Index(t => t.CourseID)
                 .Index(t => t.InstructorID);
             
-            //AddColumn("dbo.Course", "DepartmentID", c => c.Int(nullable: false));
             AlterColumn("dbo.Course", "Title", c => c.String(maxLength: 50));
             AlterColumn("dbo.Student", "LastName", c => c.String(nullable: false, maxLength: 50));
             AlterColumn("dbo.Student", "FirstName", c => c.String(nullable: false, maxLength: 50));
-            CreateIndex("dbo.Course", "DepartmentID");
-            AddForeignKey("dbo.Course", "DepartmentID", "dbo.Department", "DepartmentID", cascadeDelete: true);
+            //CreateIndex("dbo.Course", "DepartmentID");
+            //AddForeignKey("dbo.Course", "DepartmentID", "dbo.Department", "DepartmentID", cascadeDelete: true);
         }
         
         public override void Down()
@@ -79,7 +78,6 @@
             AlterColumn("dbo.Student", "FirstName", c => c.String(maxLength: 50));
             AlterColumn("dbo.Student", "LastName", c => c.String(maxLength: 50));
             AlterColumn("dbo.Course", "Title", c => c.String());
-            DropColumn("dbo.Course", "DepartmentID");
             DropTable("dbo.CourseInstructor");
             DropTable("dbo.OfficeAssignment");
             DropTable("dbo.Instructor");

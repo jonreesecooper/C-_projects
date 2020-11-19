@@ -13,7 +13,7 @@ namespace ContosoUniversity.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202011172236500_ComplexDataModel"; }
+            get { return "202011191858394_ComplexDataModel"; }
         }
         
         string IMigrationMetadata.Source

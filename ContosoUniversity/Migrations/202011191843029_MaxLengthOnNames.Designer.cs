@@ -13,7 +13,7 @@ namespace ContosoUniversity.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202011172223470_MaxLengthOnNames"; }
+            get { return "202011191843029_MaxLengthOnNames"; }
         }
         
         string IMigrationMetadata.Source
